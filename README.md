@@ -12,16 +12,6 @@ uint8_t begin(<optional resolution>)
 
 The 'begin()' method sets the resolution of the attached DS18B20 to 9, 10, 11 or 12 bits but, if <optional resolution> is not specified the default resolution is 12 bits. 'begin()' also fetches the 64 bit ROM ID/Address and stores it in a uint8_t array called dsAddress. The 'OneWire' library is required and used thus:
 
-#include <OneWire.h>
-#include <ds18b20Lite.h>
-
-OneWire ds18b20(<pin number>);  // create the OneWire instance
-ds18b20Lite sensor(&ds18b20);   // pass the OneWire instance to the ds18b20Lite library
-
-void setup(){
-  uint8_t result = sensor.begin();
-}
-
 'begin()' returns one of four results:
 
 DS_ADDRESS_OK           // the DS18B20 address was retrieved successfully and stored in sensor.dsAddress
