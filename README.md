@@ -15,8 +15,11 @@ The 'begin()' method sets the resolution of the attached DS18B20 to 9, 10, 11 or
 'begin()' returns one of four results:
 
 DS_ADDRESS_OK ,the DS18B20 address was retrieved successfully and stored in sensor.dsAddress
+
 DS_BAD_ADD_CRC ,the DS18B20 address CRC chack failed
+
 DS_WRONG_FAMILY ,the device is NOT a member of the DS18B20 family
+
 DS_INVALID_RESOLUTION ,the <optional resolution> specified was not 9, 10, 11 or 12
 
 float read(void)
