@@ -22,7 +22,7 @@ ds18b20Lite::ds18b20Lite(OneWire* _OneWire)
 
 uint8_t ds18b20Lite::begin(uint8_t _resolution)
 {
-	if(_resolution < 9 || _resolution > 12) return false;
+	if(_resolution < 9 || _resolution > 12) return DS_INVALID_RESOLUTION;
 	resolution = _resolution;
 	_wire->reset();
 	_wire->search(dsAddress);
