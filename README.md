@@ -29,4 +29,5 @@ The read() method reads the temperature data from the DS18B20 as a float. If the
 /* USER VARIABLES */
 
 uint8_t dsAddress[8] ,the 64 bit (8 Bytes) ROM ID/Address
+
 uint8_t scratchPad[9] ,the 9 Byte scaratchpad copied from the DS18B20 during each read() event.
