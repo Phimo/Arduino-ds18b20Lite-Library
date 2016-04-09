@@ -8,7 +8,7 @@ An instance of ds18b20Lite fetches readings from a single DS18B20 device on a si
 
 Only two methods are provided as follows:
 
-uint8_t begin(<optional resolution>)
+uint8_t begin(optional resolution)
 
 The 'begin()' method sets the resolution of the attached DS18B20 to 9, 10, 11 or 12 bits but, if <optional resolution> is not specified the default resolution is 12 bits. 'begin()' also fetches the 64 bit ROM ID/Address and stores it in a uint8_t array called dsAddress. The 'OneWire' library is required and used thus:
 
@@ -20,7 +20,7 @@ DS_BAD_ADD_CRC ,the DS18B20 address CRC chack failed
 
 DS_WRONG_FAMILY ,the device is NOT a member of the DS18B20 family
 
-DS_INVALID_RESOLUTION ,the <optional resolution> specified was not 9, 10, 11 or 12
+DS_INVALID_RESOLUTION ,the 'optional resolution' specified was not 9, 10, 11 or 12
 
 float read(void)
 
