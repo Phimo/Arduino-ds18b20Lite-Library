@@ -37,6 +37,7 @@ for non-commercial purposes. This text must remain intact and be included in all
 #define DS_ADDRESS_OK 0
 #define DS_BAD_ADD_CRC 1
 #define DS_WRONG_FAMILY 2
+#define DS_INVALID_RESOLUTION 3
 #define DS_TEMP_INVALID -128.0
 
 // timing
